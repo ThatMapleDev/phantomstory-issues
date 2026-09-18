@@ -5,7 +5,7 @@ This is where you report bugs and suggest features for **PhantomStory** ([phanto
 A good report gets fixed fast. A report that says "the game is broken" usually cannot be fixed, because nobody
 can find the problem. This page explains what to put in an issue so we can find it on the first try.
 
-**[→ Open a new issue](https://github.com/ThatMapleDev/phantomstory-issues/issues/new)**
+**[→ Open a new issue](https://github.com/ThatMapleDev/phantomstory-issues/issues/new/choose)**
 
 ---
 
@@ -22,8 +22,9 @@ can find the problem. This page explains what to put in an issue so we can find 
 4. **Never post your password** or anything you use to log in, not even in a screenshot.
 
 > **Found an exploit** (item or meso duplication, a way to get infinite EXP, a way to crash the server or other
-> players)? **Do not post the steps publicly.** Open an issue titled `Private report` that only says what
-> kind of problem it is. We will contact you for the details.
+> players)? **Do not post the steps publicly.** Open a bug report titled `Private report`, fill in only your
+> character name and what kind of problem it is, and write `private` in the other boxes. We will contact you
+> for the details.
 
 ---
 
@@ -42,41 +43,10 @@ The title should say **what goes wrong and where**, in one line.
 
 ### The description
 
-Copy the template below into your issue and fill in every part. If a part does not apply, write `n/a`.
+Click **[New issue](https://github.com/ThatMapleDev/phantomstory-issues/issues/new/choose)** and pick **Bug report**
+or **Feature idea**. The form asks for everything below. Fill in every box you can.
 
-```markdown
-**What happened**
-<!-- One or two sentences. What went wrong? -->
-
-**What I expected to happen**
-<!-- What should have happened instead? -->
-
-**Steps to make it happen**
-1. 
-2. 
-3. 
-
-**How often**
-<!-- Every time / sometimes (about how often?) / only once -->
-
-**Where and when**
-- Character name:
-- Map:
-- Date and time (with your time zone):
-
-**How I play**
-- Device: <!-- Windows PC / Mac / Android phone / Android tablet / ... -->
-- In the browser? <!-- Yes: which browser (Chrome, Edge, Firefox, Safari, ...) / No: which app -->
-- Controls: <!-- keyboard / gamepad / touch -->
-
-**Screenshots or video**
-<!-- Drag files into this box. See the README for how. -->
-
-**Anything else**
-<!-- Browser console errors, what you did right before, whether other players saw it too, ... -->
-```
-
-#### Why each part matters
+#### Why each box matters
 
 - **Steps to make it happen** are the most important part. If we can make the problem happen ourselves, we
   can almost always fix it. Write them as if the reader has never played the game: *"Go to Henesys. Open the
@@ -171,6 +141,8 @@ Feature ideas are welcome too. Describe:
 ---
 
 ## A good report, start to finish
+
+This is what a filled-in bug report looks like.
 
 > **Title:** Character falls through the floor on the left rope in Henesys
 >

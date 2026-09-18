@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: How to write a good report
+    url: https://github.com/ThatMapleDev/phantomstory-issues#readme
+    about: Screenshots, videos, console logs and a full example.
+  - name: PhantomStory website
+    url: https://phantom.ms
+    about: Play the game, news and rankings.

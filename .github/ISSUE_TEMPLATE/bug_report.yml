@@ -1,0 +1,128 @@
+name: Bug report
+description: Something in the game is broken or does not work as it should.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please [search the open issues](https://github.com/ThatMapleDev/phantomstory-issues/issues) first, and report **one problem per issue**.
+        **Never post your password**, not even in a screenshot. Found an exploit (duplication, crashing the server)? Don't post the steps; see the [README](https://github.com/ThatMapleDev/phantomstory-issues#before-you-post).
+
+        **Title tip:** say what goes wrong and where, e.g. *Character falls through the floor on the left rope in Henesys*.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: One or two sentences. What went wrong?
+      placeholder: When I jump off the top of the left rope in Henesys, my character falls through the platform.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What I expected to happen
+      placeholder: To land on the platform at the top of the rope.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to make it happen
+      description: Write them for someone who has never played. The better the steps, the faster the fix.
+      placeholder: |
+        1. Go to Henesys and walk to the far left.
+        2. Climb the rope next to the tree to the top.
+        3. Hold the right arrow and press jump.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does it happen?
+      options:
+        - Every time
+        - Sometimes
+        - Only once so far
+    validations:
+      required: true
+
+  - type: input
+    id: character
+    attributes:
+      label: Character name
+      placeholder: Mushroomer
+    validations:
+      required: true
+
+  - type: input
+    id: map
+    attributes:
+      label: Map
+      placeholder: Henesys
+    validations:
+      required: false
+
+  - type: input
+    id: when
+    attributes:
+      label: Date and time, with your time zone
+      description: Lets us find your session in the server logs.
+      placeholder: 2026-09-18 21:40 CEST
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Where do you play?
+      options:
+        - Browser on a PC / Mac
+        - Browser on a phone / tablet
+        - Windows app
+        - Android app
+        - Other (say below)
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser or device
+      description: Which browser (Chrome, Edge, Firefox, Safari, ...) or which phone/tablet?
+      placeholder: Chrome on Windows 11
+    validations:
+      required: false
+
+  - type: dropdown
+    id: controls
+    attributes:
+      label: Controls
+      multiple: true
+      options:
+        - Keyboard
+        - Mouse
+        - Gamepad
+        - Touch
+
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or video
+      description: |
+        Drag files into this box or paste with Ctrl+V. Show the whole game window. Videos: `.mp4`/`.mov`/`.webm` up to 10 MB, or an unlisted YouTube link; say at what second the problem happens.
+        How to record: see the [README](https://github.com/ThatMapleDev/phantomstory-issues#screenshots).
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Browser console errors (F12 → Console), what you did right before, whether other players saw it too.
+    validations:
+      required: false
